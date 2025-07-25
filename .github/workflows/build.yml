@@ -22,12 +22,6 @@ jobs:
         uses: actions/checkout@master
         with:
           path: "src"
-
-      - name: Checkout builds
-        uses: actions/checkout@master
-        with:
-          ref: "builds"
-          path: "builds"
       
       - name: Clean old builds
         run: |
